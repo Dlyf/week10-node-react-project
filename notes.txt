@@ -28,3 +28,17 @@ Etagère
 - les fonctionnalités suivantes :
 . Un système de mot clés :
 sera mis en place pour associer meuble et matière(s) première(s). Ces mots clés sont cliquables et la page présentera le détail de cette matière.
+-----------------------------------
+Les besoins :
+. Une application permettant de :
+Lister les meubles qu'il réalise avec la possibilité de voir
+exactement quels sont les matériaux qu'il a utilisé pour chaque
+réalisation.
+
+FRONT : REACTJS
+BACK : Node.js, MongoDB/Mongoose, api
+Interface utilisateur :
+. Les matériaux utilisés (Bois, Fer, Plastique)
+. Indiquer le nom de chaque entreprise le fournissant (BBois, MetaLo, pPlastique)
+. Les catégories de meuble permettant d'enregistrer l'ensemble de ses réalisations (Armoire et Etagère)
+. Un système de mot clés permettant d'associer meuble et matière première. Ces mots clés sont cliquables et la page présentera le détail de cette matière.
