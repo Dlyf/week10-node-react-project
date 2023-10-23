@@ -1,0 +1,30 @@
+Git Github
+Node.js, Express
+React
+
+Il y a 7 matières premières et que 3 entreprises :
+- les matériaux utilisés suivants :
+
+Matériau : Bois
+frêne
+chêne
+noyer
+Entreprise : "BBois"
+
+Matériau : Fer
+acier
+inox
+aluminum.
+Entreprise : "MetaLo"
+
+Matériau : Plastique
+Plastique.
+Entreprise : "pPlastique"
+
+- les catégories de meuble suivantes :
+Armoire
+Etagère
+
+- les fonctionnalités suivantes :
+. Un système de mot clés :
+sera mis en place pour associer meuble et matière(s) première(s). Ces mots clés sont cliquables et la page présentera le détail de cette matière.
