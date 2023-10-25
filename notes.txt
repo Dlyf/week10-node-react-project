@@ -43,3 +43,7 @@ Interface utilisateur :
 . Les matériaux peuvent provenir de différentes entreprises. (BBois, MetaLo, pPlastique)
 . Les catégories de meuble permettant d'enregistrer l'ensemble de ses réalisations (Armoire et Etagère)
 . Le client souhaite un système de mots clés pour associer les meubles et les matériaux. Ces mots clés sont cliquables et la page présentera le détail de cette matière.
+-------
+TODO : 
+créer un login
+faire les modèles : material, category, company, rawMaterial
