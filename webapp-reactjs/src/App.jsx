@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
+import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
 
   return (
     <>
-      <h1>Hello world</h1>
+      <Home />
+      <Login />
     </>
   )
 }
 
-export default App
+export default App;

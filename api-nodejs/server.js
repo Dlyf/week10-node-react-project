@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-
+import cors from 'cors';
 
 import appRouter from './routes/router.js';
 
@@ -18,6 +18,8 @@ const { APP_HOSTNAME, APP_PORT, NODE_ENV, MONGO_STRING, MONGO_DB_NAME, SESSION_S
 // App middlewares
 // ==========
 
+app.use(cors())
+app.use(express.json())
 app.use(appRouter);
 
 // ==========
