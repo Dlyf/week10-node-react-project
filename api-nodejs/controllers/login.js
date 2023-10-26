@@ -12,8 +12,10 @@ export default async function LoginController(req, res) {
 export async function PostLoginController(req, res) {
   console.log("POST envoyé", req.body);
   const emailValidated = validateEmail(req.body.email);
-  if (!emailValidated)
+  if (!emailValidated) {
     return res.status(400).send(`<h1>Erreur !</h1><p>Email invalide !</p>`);
+  }
+  res.redirect('/')
 
   try {
     const token = jwt.sign(

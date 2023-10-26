@@ -45,5 +45,5 @@ Interface utilisateur :
 . Le client souhaite un système de mots clés pour associer les meubles et les matériaux. Ces mots clés sont cliquables et la page présentera le détail de cette matière.
 -------
 TODO : 
-créer un login
-faire les modèles : material, category, company, rawMaterial
+créer un login OK
+faire les modèles : User OK, Furnitures, Companies
