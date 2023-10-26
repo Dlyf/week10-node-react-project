@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import HomeController from '../controllers/home.js';
 import LoginController, {PostLoginController} from '../controllers/login.js';
-import registerController, { PostRegisterController } from '../controllers/register.js';
+import FurnituresController from '../controllers/furnitures.js';
+// import registerController, { PostRegisterController } from '../controllers/register.js';
 
 // @ts-ignore
 const appRouter = new Router();
@@ -12,11 +12,9 @@ appRouter.get('/', (req, res) => {
   });
 });
 
-appRouter.get('/dashboard', HomeController);
 appRouter.get('/login', LoginController)
 appRouter.post('/login', PostLoginController);
-// appRouter.get('/logout', LogoutController);
-appRouter.get('/register', registerController);
-appRouter.post('/register', PostRegisterController);
+appRouter.get('/furnitures', FurnituresController)
+
 
 export default appRouter;

@@ -8,7 +8,7 @@ function App() {
     async function getData() {
       try {
         // @ts-ignore
-        const response = await fetch(import.meta.env.VITE_SERVER_URL);
+        const response = await fetch(import.meta.env.VITE_SERVER_URL + "/furnitures");
         const data = await response.json();
         setServerData(data);
       }

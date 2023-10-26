@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "db:server": "node --no-warnings server.js"
+    "db:server": "node --no-warnings server.js",
+    "db:seed": "node --no-warnings _tools/seed.js"
   },
   "author": "",
   "license": "ISC",

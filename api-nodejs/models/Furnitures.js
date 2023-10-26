@@ -6,7 +6,7 @@
 // materials: ['ebene', 'acajou', ...]
 import mongoose from 'mongoose';
 
-const FurnitureSchema = new mongoose.Schema(
+const FurnituresSchema = new mongoose.Schema(
   {
     _id: {
       type: mongoose.SchemaTypes.ObjectId,
@@ -29,6 +29,6 @@ const FurnitureSchema = new mongoose.Schema(
   { versionKey: false }
 );
 
-const FurnitureModel = mongoose.model('Furniture', FurnitureSchema);
+const FurnituresModel = mongoose.model('Furniture', FurnituresSchema);
 
-export default FurnitureModel;
+export default FurnituresModel;

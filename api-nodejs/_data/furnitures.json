@@ -1,0 +1,69 @@
+{
+  "furnitures": [
+    {
+      "title": "Armoire en frêne",
+      "category": "Armoire",
+      "materials": [
+        "frêne"
+      ]
+    },
+    {
+      "title": "Étagère en chêne",
+      "category": "Étagère",
+      "materials": [
+        "chêne"
+      ]
+    },
+    {
+      "title": "Table en noyer",
+      "category": "Table",
+      "materials": [
+        "noyer"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "frêne",
+      "company": "BBois"
+    },
+    {
+      "name": "chêne",
+      "company": "BBois"
+    },
+    {
+      "name": "noyer",
+      "company": "BBois"
+    },
+    {
+      "name": "acier",
+      "company": "MetaLo"
+    },
+    {
+      "name": "inox",
+      "company": "MetaLo"
+    },
+    {
+      "name": "aluminum",
+      "company": "MetaLo"
+    },
+    {
+      "name": "Plastique",
+      "company": "pPlastique"
+    }
+  ],
+  "companies": [
+    {
+      "name": "BBois",
+      "materials": ["frêne", "chêne", "noyer"]
+    },
+    {
+      "name": "MetaLo",
+      "materials": ["acier", "inox", "aluminum"]
+    },
+    {
+      "name": "pPlastique",
+      "materials": ["Plastique"]
+    }
+  ]
+}

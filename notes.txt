@@ -46,4 +46,7 @@ Interface utilisateur :
 -------
 TODO : 
 créer un login OK
-faire les modèles : User OK, Furnitures, Companies
+faire les modèles : User OK, Furnitures OK, Companies Ok, Materials
+-------------
+TODO : 
+réussir à afficher sur le front, la liste des furnitures, companies, materials et un formulaire
