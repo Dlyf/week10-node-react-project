@@ -5,11 +5,12 @@
 // category : 'table' // ou 'chaise'
 // materials: ['ebene', 'acajou', ...]
 import mongoose from 'mongoose';
+import MaterialModel from "../models/Materials.js";
 
 const FurnituresSchema = new mongoose.Schema(
   {
     _id: {
-      type: mongoose.SchemaTypes.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       required: true,
       default: () => new mongoose.Types.ObjectId(),
     },
@@ -21,14 +22,13 @@ const FurnituresSchema = new mongoose.Schema(
     },
     materials: [
       {
-        type: mongoose.SchemaTypes.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Material',
-      },
-    ],
-  },
-  { versionKey: false }
+      }
+    ]
+  }
 );
 
-const FurnituresModel = mongoose.model('Furniture', FurnituresSchema);
+const FurnituresModel = mongoose.model('Furniture', FurnituresSchema, 'furnitures');
 
 export default FurnituresModel;

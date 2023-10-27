@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import LoginController, {PostLoginController} from '../controllers/login.js';
-import FurnituresController from '../controllers/furnitures.js';
+import  FurnituresController from '../controllers/furnitures.js';
 // import registerController, { PostRegisterController } from '../controllers/register.js';
 
 // @ts-ignore

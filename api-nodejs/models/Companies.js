@@ -16,14 +16,13 @@ const CompaniesSchema = new mongoose.Schema(
     name: { type: String, required: true },
     materials: [
       {
-        type: mongoose.SchemaTypes.ObjectId,
-        ref: 'Material',
+        type: String
       },
     ],
   },
   { versionKey: false }
 );
 
-const CompaniesModel = mongoose.model('Companies', CompaniesSchema);
+const CompaniesModel = mongoose.model('Companies', CompaniesSchema, 'Companies');
 
 export default CompaniesModel;

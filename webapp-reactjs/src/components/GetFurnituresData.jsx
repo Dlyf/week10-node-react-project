@@ -24,7 +24,9 @@ function GetFurnituresData() {
       {furnitures && (
         <>
           <ul>
-            {furnitures.map((f, id) => (
+            {furnitures.
+// @ts-ignore
+            map((f, id) => (
               <li key={id}>{f.title}</li>
             ))}
           </ul>
