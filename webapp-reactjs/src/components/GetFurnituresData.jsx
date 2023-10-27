@@ -5,6 +5,7 @@ import * as APIService from '../services/api';
 function GetFurnituresData() {
   const [furnitures, setFurnitures] = useState(null);
   const [error, setError] = useState(null);
+  console.log(furnitures)
 
   useEffect(() => {
     async function getData() {
@@ -27,7 +28,18 @@ function GetFurnituresData() {
             {furnitures.
 // @ts-ignore
             map((f, id) => (
-              <li key={id}>{f.title}</li>
+              <>
+
+              <li key={id}> {f.materials.map((material) => (
+                <span key={material._id}><p>Matières Premières :</p>{material.name} <br />
+                <p>Nom de l'entreprise : </p>{material.company.name}
+                </span>
+
+              ))}</li>
+            <p>{f.title}</p>
+
+              </>
+
             ))}
           </ul>
         </>

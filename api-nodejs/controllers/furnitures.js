@@ -17,7 +17,20 @@ export default async function furnitures(req, res) {
   }
 }
 
-// export default async function PostFurnitures(req, res) {
-  
-  
-// }
+export async function PostFurnitures(req, res) {
+  console.log("########")
+
+  console.log("test", req.body)
+  try {
+    const { title, category } = req.body;
+    // console.log(req.body.title, req.body.category );
+      const newFurniture = new FurnituresModel({ title, category });
+
+      const createdFurniture = await newFurniture.save();
+      res.status(201).json(createdFurniture);
+} catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Erreur lors de la création du meuble.' });
+}
+
+}

@@ -1,46 +1,40 @@
 import React, { useState } from "react";
+import * as APIService from '../services/api';
 
 function FormAddMaterial() {
 
-  const [formData, setFormData] = useState({})
+  const [furnitures, setFurnitures] = useState({title:"", category:"Armoire"})
   const [error, setError] = useState(null)
 
-  function updateField(event) {
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value
-    })
+  async function sendForm(event) {
+    event.preventDefault();
+    console.log(furnitures)
+    try {
+      const response = await APIService.postFurnitures(furnitures);
+      const data = await response.json();
+      console.log(data)
+    } catch (err) {
+      setError(err.message);
+    }
   }
-
-//  async function sendForm(event) {
-//     event.preventDefault();
-//     // Faire la requete
-//     // @ts-ignore
-//     try {
-//       // @ts-ignore
-//       const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/login`, {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         // Send data to server
-//         body: JSON.stringify(formData)
-//       })
-//       const data = await response.json()
-//       console.log('Reponse serveur', data)
-//     }
-//     catch (err) {
-//       setError(err.message);
-//     }
-//   }
 
   return (
     <>
     <h2>hello world</h2>
-      {/* <form onSubmit={sendForm}>
-
-        <button type="submit">Login</button>
-      </form> */}
+     <form onSubmit={sendForm}>
+     <label>Catégorie:
+          <select onChange={(e)=> setFurnitures({...furnitures, ["category"] : e.currentTarget.value})} name="category">
+            <option value="Armoire">Armoire</option>
+            <option value="Étagère">Étagère</option>
+          </select>
+        </label>
+        {<div className="errorMessage">{error}</div>}
+        title : <input onChange={(e) => setFurnitures({...furnitures, ["title"] : e.currentTarget.value})} type="text" name="title" />
+        <br />
+        
+        <br />
+        <button type="submit">Add</button>
+      </form>
     </>
   )
 }

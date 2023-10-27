@@ -17,7 +17,7 @@ const FurnituresSchema = new mongoose.Schema(
     title: { type: String, required: true },
     category: {
       type: String,
-      enum: ['Armoire', 'Etagère'],
+      enum: ['Armoire', 'Étagère'],
       required: true,
     },
     materials: [

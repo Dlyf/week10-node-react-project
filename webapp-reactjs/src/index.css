@@ -7,4 +7,14 @@
 
 body {
   margin: 0;
+  background-color: #EEEAE7;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.colorTitle {
+  color: #1ff68b;
+  text-align: center;
 }

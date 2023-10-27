@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import LoginController, {PostLoginController} from '../controllers/login.js';
-import  FurnituresController from '../controllers/furnitures.js';
+import  FurnituresController, {PostFurnitures} from '../controllers/furnitures.js';
 // import registerController, { PostRegisterController } from '../controllers/register.js';
 
 // @ts-ignore
@@ -15,6 +15,8 @@ appRouter.get('/', (req, res) => {
 appRouter.get('/login', LoginController)
 appRouter.post('/login', PostLoginController);
 appRouter.get('/furnitures', FurnituresController)
+appRouter.post('/createFurnitures', PostFurnitures)
+
 
 
 export default appRouter;

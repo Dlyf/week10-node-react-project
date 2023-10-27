@@ -36,3 +36,9 @@ export async function getFurnitures() {
   const response = await apiInstance.get('/furnitures');
   return response.data;
 }
+
+export async function postFurnitures( data ) {
+  const response = await apiInstance.post('/createFurnitures', data);
+  return response.data;
+
+}
