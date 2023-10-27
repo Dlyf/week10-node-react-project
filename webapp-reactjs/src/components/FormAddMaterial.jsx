@@ -8,7 +8,6 @@ function FormAddMaterial() {
 
   async function sendForm(event) {
     event.preventDefault();
-    console.log(furnitures)
     try {
       const response = await APIService.postFurnitures(furnitures);
       const data = await response.json();
@@ -28,10 +27,10 @@ function FormAddMaterial() {
             <option value="Étagère">Étagère</option>
           </select>
         </label>
-        {<div className="errorMessage">{error}</div>}
+        {/* {<div className="errorMessage">{error}</div>} */}
         title : <input onChange={(e) => setFurnitures({...furnitures, ["title"] : e.currentTarget.value})} type="text" name="title" />
         <br />
-        
+
         <br />
         <button type="submit">Add</button>
       </form>

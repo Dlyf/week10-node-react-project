@@ -21,11 +21,11 @@ function App() {
 
   return (
     <>
-      <h1 className="colorTitle">Hello world</h1>
+      <h1 className="colorTitle">Key Word List</h1>
       {/* <p>Message de l&apos;API :</p> */}
 
-      {serverData && <pre>{JSON.stringify(serverData, null, 2)}</pre>}
-      {error && <div className="errorMessage">{error}</div>}
+      {/* {serverData && <pre>{JSON.stringify(serverData, null, 2)}</pre>}
+      {error && <div className="errorMessage">{error}</div>} */}
 
     </>
   )

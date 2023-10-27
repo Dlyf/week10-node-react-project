@@ -14,7 +14,6 @@ function Login() {
 
  async function sendForm(event) {
     event.preventDefault();
-    console.log(formData);
     // Faire la requete
     // @ts-ignore
     try {
